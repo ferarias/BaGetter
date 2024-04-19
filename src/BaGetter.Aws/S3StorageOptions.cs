@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using BaGetter.Core;
 
@@ -18,6 +19,8 @@ public class S3StorageOptions
     public string Bucket { get; set; }
 
     public string Prefix { get; set; }
+
+    public Uri Endpoint { get; set; }
 
     public bool UseInstanceProfile { get; set; }
 
